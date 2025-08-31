@@ -1,0 +1,33 @@
+\documentclass[]{book}
+
+% ====== PAGE SIZE & MARGINS ======
+\usepackage{geometry}
+\geometry{papersize={10.75cm, 16cm}, left=8mm, right=8mm, top=10mm, bottom=15mm}
+
+% ====== IN-DOCUMENT SETTINGS ======
+% These settings have to be dont this way because they need to come after \begin{document}
+\newcommand{\settings}[0]{
+% ====== BEGIN INTERNAL SETTINGS ======
+\fontsize{8.4pt}{12.8pt}\selectfont
+% ====== END INTERNAL SETTINGS ======
+}
+
+% ====== HEADER & FOOTER ======
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% L -> left | C -> center | R -> right 
+% O -> odd | E -> even <== This doesn't seem to work properly
+\fancyhead[L]{}
+\fancyhead[C]{}
+\fancyhead[R]{}
+\fancyfoot[L]{}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{}
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.0pt}
+\fancypagestyle{titlepage}{
+  \fancyfoot[L]{}
+  \fancyfoot[C]{\thepage}
+  \fancyfoot[R]{}
+}

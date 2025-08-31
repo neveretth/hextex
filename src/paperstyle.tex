@@ -1,0 +1,34 @@
+\documentclass[]{article}
+
+% ====== PAGE SIZE & MARGINS ======
+\usepackage{geometry}
+% \geometry{a4paper, left=32mm, right=32mm, top=36mm, bottom=36mm}
+\geometry{letterpaper, left=28mm, right=28mm, top=36mm, bottom=36mm}
+
+% ====== IN-DOCUMENT SETTINGS ======
+% These settings have to be dont this way because they need to come after \begin{document}
+\newcommand{\settings}[0]{
+% ====== BEGIN INTERNAL SETTINGS ======
+\fontsize{10.4pt}{14.8pt}\selectfont
+% ====== END INTERNAL SETTINGS ======
+}
+
+% ====== HEADER & FOOTER ======
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% L -> left | C -> center | R -> right 
+% O -> odd | E -> even <== This doesn't seem to work properly
+\fancyhead[L]{}
+\fancyhead[C]{}
+\fancyhead[R]{}
+\fancyfoot[L]{Nicholas Everett Howard}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{University of Tennessee}
+% \renewcommand{\headrulewidth}{0.05pt}
+\renewcommand{\footrulewidth}{0.05pt}
+\fancypagestyle{titlepage}{
+  \fancyfoot[L]{Nicholas Everett Howard}
+  \fancyfoot[C]{\thepage}
+  \fancyfoot[R]{University of Tennessee}
+}

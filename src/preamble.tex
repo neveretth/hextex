@@ -1,0 +1,52 @@
+% ====== FONT ======
+\usepackage{fontspec}
+\newfontfamily{\berkeleymono}[Path=./font/]{BerkeleyMono-Regular.ttf}
+\newfontfamily{\garamond}[Path=./font/]{EBGaramond-Regular.ttf}
+
+% ====== SETTINGS ======
+\pagenumbering{arabic}
+\usepackage{datetime}
+\newdate{date}{22}{08}{2025}
+
+% ====== STANDARD PACKAGE IMPORTS ======
+\usepackage{amsmath}
+\usepackage{fancybox}
+\usepackage{float}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{gensymb}
+
+% Make various things look a bit nicer.
+\setlist{noitemsep, topsep=6pt, parsep=1pt, partopsep=0pt}
+\setlength{\tabcolsep}{16pt}
+\renewcommand{\arraystretch}{1.25}
+
+% Equation tags (1.1.2) <-- this thing on the right of equations.
+\makeatletter
+% \newtagform{sectiontag}[\thesubsection\alph{equation}\@gobble]{(}{)}
+\newtagform{sectiontag}[\numberwithin{equation}{subsection}]{(}{)}
+\makeatother
+
+% ====== LISTINGS ======
+\usepackage{listings}
+\lstset{
+    frame=tbrl,
+    tabsize=4,
+    showstringspaces=false,
+    % numbers=left,
+    basicstyle=\berkeleymono\footnotesize,
+    xleftmargin=2mm,
+    xrightmargin=2mm,
+} 
+\lstnewenvironment{code}{}{}
+
+% ====== GRAPHICS ======
+\usepackage{graphicx}
+\graphicspath{ {./img/} }
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{circuitikz}
+
+% ====== BIBLIOGRAPHY ======
+\usepackage[style=authoryear, backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
