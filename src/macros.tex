@@ -14,6 +14,25 @@
 \end{figure}
 }
 
+\newcommand{\addfigd}[5]{
+\begin{figure}[H]
+\vspace{0mm}
+\noindent\minipage{\linewidth}
+\begin{center}
+  \scalebox{#3}{
+    \begin{subfigure}{\linewidth}
+      \includegraphics[angle=#4, width=0.45\textwidth]{#1}\hfill
+      \includegraphics[angle=#4, width=0.45\textwidth]{#2}\hfill
+    \end{subfigure}
+  }\\
+\end{center}
+\endminipage
+\vspace{0mm}
+\caption{#5}
+\vspace{-2mm}
+\end{figure}
+}
+
 \renewcommand{\table}[4]{
 \begin{figure}[H]
 \vspace{0mm}
