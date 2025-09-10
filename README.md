@@ -17,16 +17,10 @@ Set the template you want (in file `main.tex`):
 \input{paperstyle}
 ```
 
-Build and enjoy:
+Compile with latexmk (hint: make a binding in your editor).
+
 ```
-make
-
-# IF YOU CHANGE BIBLIOGRAPHY
-make bib
-
-# IF ALL IS LOST
-make clean
-make
+latexmk -lualatex main
 ```
 
 __NOTE__: the content file is main.tex, this is also where compilation is
@@ -39,3 +33,15 @@ entered.
 | paperstyle | Academic paper, math focused. |
 | articlestyle | Academic paper, text focused. |
 | bookstyle | Book. |
+
+## DEPRECATED
+```
+make
+
+# IF YOU CHANGE BIBLIOGRAPHY
+make bib
+
+# IF ALL IS LOST
+make clean
+make
+```

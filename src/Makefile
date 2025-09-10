@@ -1,4 +1,4 @@
-LATEXCC=xelatex
+LATEXCC=lualatex
 BIBCC=biber
 ENTRYPOINT=main
 
