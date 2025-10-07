@@ -1,7 +1,4 @@
-% Choose style!
 \input{paperstyle}
-% \input{articlestyle} % Requires use of \begin{multicols}{2} or 3 (don't do more)
-% \input{bookstyle} % Changes the way chapters and whatnot work... (unpolished)
 
 \input{preamble}
 \input{macros}
@@ -11,13 +8,16 @@
 \settings
 \usetagform{sectiontag}
 
-\title{Gibberish of Stuff Within A Beautiful Title for\\
-Fancy Things that Wraps Please}
-\author{\Large{\ Nicholas Everett Howard}
-\smallskip\\
-Some Collaborators
-}
-\date{\displaydate{date}}
+\title{Title}
+% This is the usual style
+% \author[1]{Name}
+% \affil[1]{inst}
+\author{Nicholas Howard}
+\affil{University of Tennessee, Knoxville}
+
+% displaydate if a specific date is needed
+% \date{\displaydate{date}}
+\date{\today}
 \maketitle
 
 \thispagestyle{titlepage}
@@ -26,6 +26,7 @@ Some Collaborators
 \vspace{4mm}
 \hrule
 \vspace{4mm}
+
 \begin{abstract}
 \normalsize
 Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint
@@ -43,112 +44,9 @@ consectetur cupidatat.
 % ONLY IF USING ARTICLESTYLE
 % \begin{multicols}{2}
 
-\section{First part}
-Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint
-consectetur cupidatat.
-
-\addfig{square}{.35}{0}{black square}
-
-\addfigd{square}{square}{.8}{0}{black square but there's two}
-
-Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint
-consectetur cupidatat.
-
-\table{1}{|c|c|c|}{ 
-  \hline
-  Header & Header & Header \\
-  \hline
-  \hline
-  item & item & item \\
-  \hline
-  item & item & item \\
-  \hline
-}{datus datah datum}
-
-Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint
-consectetur cupidatat.
-
-\eq{
-  \iiint x dx = \iiint x dx = \iiint x dx
-}
-
-Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint
-consectetur cupidatat.
-
-\section{Second Part}
-
-Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint
-consectetur cupidatat.
-
-Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint
-consectetur cupidatat.
-
-\vspace{2mm}
-\begin{code}[language=Python]
-  print("hello World")
-  if x:
-    for i in range:
-      print(x)
-\end{code}
-\vspace{0mm}
-
-Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
-labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
-anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
-aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
-pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
-commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
-proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
-eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
-Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
-culpa duis.
-
-Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
-labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
-anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
-aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
-pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
-commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
-proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
-eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
-Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
-culpa duis.
-
-Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
-labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
-anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
-aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
-pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
-commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
-proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
-eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
-Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
-culpa duis.
-
-Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
-labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
-anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
-aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
-pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
-commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
-proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
-eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
-Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
-culpa duis.
-
-Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
-labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
-anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
-aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
-pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
-commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
-proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
-eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
-Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
-culpa duis.
-
 \newpage
-\printbibliography
+\input{content}
+
 
 % ONLY IF USING ARTICLESTYLE
 % \end{multicols}
