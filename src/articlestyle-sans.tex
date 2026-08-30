@@ -1,0 +1,87 @@
+\documentclass[]{article}
+
+% ====== PAGE SIZE & MARGINS ======
+\usepackage{geometry}
+% \geometry{a4paper, left=32mm, right=32mm, top=36mm, bottom=36mm}
+\geometry{letterpaper, left=16mm, right=16mm, top=24mm, bottom=24mm}
+
+% ====== COLUMNS ======
+\usepackage{multicol}
+\setlength{\columnsep}{4mm}
+% \setlength{\columnseprule}{0.5pt}
+
+% ====== IN-DOCUMENT SETTINGS ======
+% These settings have to be dont this way because they need to come after \begin{document}
+\newcommand{\settings}[0]{
+% ====== BEGIN INTERNAL SETTINGS ======
+\fontsize{7.8pt}{11.0pt}\selectfont
+% ====== END INTERNAL SETTINGS ======
+}
+
+% ====== HEADER & FOOTER ======
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% L -> left | C -> center | R -> right 
+% O -> odd | E -> even <== This doesn't seem to work properly
+\fancyhead[L]{}
+\fancyhead[C]{}
+\fancyhead[R]{}
+\fancyfoot[L]{Nicholas Everett Howard}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{University of Tennessee}
+% \renewcommand{\headrulewidth}{0.05pt}
+\renewcommand{\footrulewidth}{0.05pt}
+\fancypagestyle{titlepage}{
+  \fancyfoot[L]{Nicholas Everett Howard}
+  \fancyfoot[C]{\thepage}
+  \fancyfoot[R]{University of Tennessee}
+}
+
+\input{preamble}
+
+% ====== FONT ======
+% Located after preamble because of package import order
+\newfontfamily{\classico}[Path=./font/]{URWClassico-Regular.otf}
+
+\begin{document}
+
+\classico
+
+\settings
+\usetagform{sectiontag}
+
+\maketitle
+
+\thispagestyle{titlepage}
+
+\vspace{4mm}
+\hrule
+\vspace{4mm}
+
+\begin{abstract}
+\normalsize
+\abstractmatter
+\end{abstract}
+
+\vspace{4mm}
+\hrule
+\vspace{4mm}
+
+\tableofcontents
+
+\settings
+
+\newpage
+
+% ONLY IF USING ARTICLESTYLE
+\begin{multicols}{2}
+
+\input{content}
+
+\end{multicols}
+
+\newpage
+\printbibliography
+
+\end{document}
