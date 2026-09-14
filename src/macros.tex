@@ -1,4 +1,4 @@
-\newcommand{\addfig}[4]{
+\newcommand{\addfig}[5]{
 \begin{figure}[H]
 \vspace{0mm}
 \noindent\minipage{\linewidth}
@@ -10,11 +10,12 @@
 \endminipage
 \vspace{0mm}
 \caption{#4}
+\label{fig:#5}
 \vspace{-2mm}
 \end{figure}
 }
 
-\newcommand{\addfigd}[5]{
+\newcommand{\addfigd}[6]{
 \begin{figure}[H]
 \vspace{0mm}
 \noindent\minipage{\linewidth}
@@ -29,11 +30,13 @@
 \endminipage
 \vspace{0mm}
 \caption{#5}
+\label{fig:#6}
 \vspace{-2mm}
 \end{figure}
 }
 
-\renewcommand{\table}[4]{
+% TODO: this should be a table, not a figure.
+\renewcommand{\table}[5]{
 \begin{figure}[H]
 \vspace{0mm}
 \noindent\minipage{\linewidth}
@@ -47,16 +50,18 @@
 \endminipage
 \vspace{0mm}
 \caption{#4}
+\label{tab:#5}
 \vspace{-2mm}
 \end{figure}
 }
 
-\newcommand{\eq}[1]{
+\newcommand{\eq}[2]{
 \vspace{-4mm}
 \begin{equation}
 \begin{split}
   #1
 \end{split}
+\label{eq:#2}
 \end{equation}
 }
 

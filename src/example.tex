@@ -20,16 +20,23 @@ vehicula ut id nulla. Proin justo lectus, mattis nec risus sit amet,
 pellentesque hendrerit massa. Donec eu lectus at orci imperdiet placerat nec
 vitae arcu. Quisque ut risus purus. Sed at vulputate libero.
 
+Example Equation \ref{eq:magnet-eq}.
 
 \eq {
   \oint_{\pt \Sigma} \bm{B} \cdot \dd\bm{\ell} \
   = - \frac{\dd}{\dd t} \int_{\Sigma} \bm{B} \cdot \dd\bm{S}
-}
+}{magnet-eq}
+
+Example Figure \ref{fig:label}.
 
 % Figures
-\addfig{square}{0.5}{0}{The caption.}
+\addfig{square}{0.5}{0}{The caption.}{label}
 
-\addfigd{square}{square}{0.9}{0}{The caption.}
+Example Figure \ref{fig:double-fig}.
+
+\addfigd{square}{square}{0.9}{0}{The caption.}{double-fig}
+
+Example Table \ref{tab:table-ex}.
 
 \table{1.0}{c|c}{
     \toprule
@@ -39,7 +46,7 @@ vitae arcu. Quisque ut risus purus. Sed at vulputate libero.
     Thing 1 & Thing 2 \\
     Thing 1 & Thing 2 \\
     \bottomrule
-}{The caption.}
+}{The caption.}{table-ex}
 
 Pellentesque feugiat laoreet mi vitae rhoncus. Phasellus pretium sapien eu nunc
 consequat, eu consectetur tellus congue. Aliquam ornare eu est vel posuere.
